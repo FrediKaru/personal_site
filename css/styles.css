@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Teko:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Poppins:ital,wght@0,400;0,500;0,600;1,300;1,400;1,500&family=Teko:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  width: 100svw;
+  background-color: #0f1214; }
+
+a {
+  text-decoration: none;
+  /* Remove underlines */
+  color: inherit;
+  /* Inherit the parent's text color */
+  cursor: pointer;
+  /* Change cursor to a pointer on hover for interactive links */ }
+  a :hover {
+    border-bottom: solid 7px #ff5722; }
+
+a:hover {
+  text-decoration: underline; }
+
+.nav {
+  margin-top: 30px;
+  color: white; }
+  .nav li {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: #fff;
+    /* Text color */
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    /* Bold text */
+    font-size: 16px;
+    /* Font size */
+    padding: 10px 20px;
+    /* Add padding to the links */
+    border-radius: 5px;
+    /* Add rounded corners */
+    transition: color 0.3s; }
+    .nav li :hover {
+      border-bottom: solid 8px linear-gradient(45deg, #f50057, #ff5722); }
+
+.layout-grid {
+  display: grid;
+  gap: 20px;
+  width: minmax(400px, 600px);
+  padding: 0 200px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: ". logo . . . . . . navLink navLink navLink ." ". . .  smallH smallH smallH smallH . . . . ." ". . img bigH bigH bigH bigH bigH bigH . . ." ". . . . . . . heroP heroP heroP . ." ". about about about about about about about about about about ." ". projects projects projects projects projects projects projects projects projects projects ." ". contact contact contact contact contact contact contact contact contact contact ." ". footer footer footer footer footer footer footer footer footer footer ."; }
+
+section > h3 {
+  font-size: larger;
+  color: white; }
+
+.img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #b8b8b8;
+  border-radius: 50%;
+  display: inline-block;
+  grid-area: img;
+  background-image: url(/img/prof.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.smallH,
+.heroP {
+  color: white;
+  font-family: "JetBrains Mono", monospace; }
+
+.smallH {
+  grid-area: smallH;
+  font-size: 20pt; }
+
+.heroP {
+  grid-area: heroP;
+  font-size: 1em;
+  line-height: auto; }
+
+.bigH {
+  font-family: "Poppins", sans-serif;
+  margin-top: 3vh;
+  line-height: 1.5;
+  font-weight: 300;
+  font-size: 40pt;
+  color: white;
+  grid-area: bigH;
+  margin-top: 0; }
+
+.logo {
+  grid-area: logo;
+  letter-spacing: -10;
+  font-size: 25pt; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.nav-links {
+  display: flex;
+  grid-area: navLink;
+  margin-bottom: 10em; }
+  .nav-links li {
+    flex-grow: 1; }
+
+.about {
+  margin-top: 200px;
+  grid-area: about; }
+
+.projects {
+  grid-area: projects; }
+
+.contact {
+  grid-area: contact; }
+
+.footer {
+  margin: 50px 0;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  grid-area: footer;
+  bottom: 10px; }
+  .footer ul {
+    display: flex; }
+    .footer ul li {
+      padding-left: 1em; }
+
+section {
+  color: #fff; }
+  section h3 {
+    font-size: 30pt;
+    text-align: center; }
+
+.projects {
+  border: solid 1px white;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-radius: 7px; }
+
+form {
+  max-width: 400px;
+  /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Style for the submit button */
+  /* Hover effect for the submit button */ }
+  form label {
+    display: block;
+    /* Display labels as blocks for better alignment */
+    font-weight: bold;
+    margin-bottom: 8px;
+    /* Add some spacing below labels */ }
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    /* Add spacing between input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px; }
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth color transition on hover */ }
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */ }

@@ -4,37 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fredi Karu</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="/main.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/main.js" defer></script>
   </head>
   <body>
-    <div id="layout">
-      <nav>
-        <div class="logo">
-          <a href="">Fredi Karu</a>
+    <div class="container">
+      <div class="gradient"></div>
+    </div>
+    <div class="layout-grid">
+      <div class="nav logo">
+        <a href="#">FKR</a>
+      </div>
+      <ul class="nav nav-links">
+        <li><a class="btn-control" href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="img"></div>
+      <p class="smallH">Hi, my name is Fredi.</p>
+      <h2 class="bigH">Front-end development & lighting design</h2>
+      <p class="heroP">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. A distinctio
+        officiis itaque debitis, maiores doloribus aspernatur officia, totam
+        quae sit nesciunt! Eaque adipisci architecto natus. A delectus ducimus
+        unde asperiores?
+      </p>
+
+      <section class="about">
+        <h3>About</h3>
+        <p>
+          Tempor aliquip sint ad consequat amet esse. Duis eu anim Lorem aute
+          esse cillum. Pariatur sunt ipsum in sit adipisicing magna eiusmod
+          reprehenderit deserunt enim dolor nisi ex eu. Aute ad incididunt
+          laboris duis ex. Pariatur anim voluptate cupidatat eu excepteur
+          officia proident duis eu Lorem veniam. Cupidatat non in sit in ea eu
+          nostrud in commodo laboris sunt.
+        </p>
+        <p class="tools">Main tools used</p>
+      </section>
+      <section class="projects">
+        <h3>My projects</h3>
+        <div>
+          <h4>Snake game</h4>
+          <p>Used tools:</p>
+          <p>
+            Lorem ipsum sit consectetur labore velit irure proident ut. Velit
+            minim tempor sint qui excepteur consectetur esse dolor. In do do
+            adipisicing tempor qui in commodo nulla officia consectetur enim ut.
+            Duis velit ipsum cupidatat in. Exercitation excepteur dolor nulla
+            cillum exercitation. Laborum culpa consectetur deserunt quis duis
+            velit et proident ipsum exercitation voluptate minim dolor officia.
+            Dolore non non et aliqua amet elit occaecat minim voluptate velit
+            commodo ex incididunt cillum.
+          </p>
         </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <br />
+        <div>
+          <h4>CRUD APP</h4>
+          <p>Used tools:</p>
+          <p>
+            Lorem ipsum sit consectetur labore velit irure proident ut. Velit
+            minim tempor sint qui excepteur consectetur esse dolor. In do do
+            adipisicing tempor qui in commodo nulla officia consectetur enim ut.
+            Duis velit ipsum cupidatat in. Exercitation excepteur dolor nulla
+            cillum exercitation. Laborum culpa consectetur deserunt quis duis
+            velit et proident ipsum exercitation voluptate minim dolor officia.
+            Dolore non non et aliqua amet elit occaecat minim voluptate velit
+            commodo ex incididunt cillum.
+          </p>
+        </div>
+      </section>
+      <section class="contact">
+        <h3>Contact</h3>
+        <p>
+          If you have to offer projects or need a coworker - Write me a message!
+        </p>
+
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <div class="footer">
+        <p>&copy; 2023 Fredi Karu</p>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/fredikaru197">LinkedIn</a>
+          </li>
+          <li><a href="#">Facebook</a></li>
         </ul>
-      </nav>
-      <section id="about">About</section>
-      <section id="projects">My projects</section>
-      <section id="Contact">Contact</section>
-      <footer>
-        <div class="container">
-          <p>&copy; 2023 Fredi Karu</p>
-          <ul class="social-links">
-            <li>
-              <a href="https://www.linkedin.com/in/fredikaru197">LinkedIn</a>
-            </li>
-            <li><a href="#">Facebook</a></li>
-            <!-- Add more social media links as needed -->
-          </ul>
-        </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
